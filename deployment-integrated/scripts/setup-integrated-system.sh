@@ -24,7 +24,7 @@ BASE_URL="https://stellular-zuccutto-0bc90b.netlify.app"
 # UPDATE THIS to your GitHub repository raw URL
 # Format: https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main
 # Example: https://raw.githubusercontent.com/johndoe/captain-jax-integrated/main
-GITHUB_RAW="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main"
+GITHUB_RAW="https://raw.githubusercontent.com/jordanurbs/captain-jax-integrated/main"
 
 log "🚀 Captain JAX Integrated Content System - VPS Setup"
 
