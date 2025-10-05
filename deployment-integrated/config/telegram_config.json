@@ -1,0 +1,143 @@
+{
+  "description": "Captain JAX Telegram Bot Configuration",
+  "version": "2.1",
+
+  "bot_configuration": {
+    "bot_token": "ENV:TELEGRAM_BOT_TOKEN",
+    "authorized_users": ["ENV:TELEGRAM_USER_ID"],
+    "welcome_message": "⚓ Ahoy! Captain JAX reporting for duty!\n\nI'm your AI content automation assistant. I'll help you create engaging Twitter content while keeping you in the loop.\n\nUse /help to see what I can do!"
+  },
+
+  "approval_settings": {
+    "mode": "optional",
+    "approval_timeout_hours": 2,
+    "approval_window": {
+      "start_hour": 7,
+      "end_hour": 22,
+      "timezone": "UTC"
+    },
+    "notification_settings": {
+      "send_draft_previews": true,
+      "include_images": true,
+      "show_analytics_context": true
+    }
+  },
+
+  "inspiration_collection": {
+    "check_in_times": ["08:00", "18:00"],
+    "check_in_prompts": {
+      "morning": "☀️ Good morning, Captain! Any inspiring ideas or lessons learned that you'd like to share today?",
+      "evening": "🌙 Evening check-in! Did you encounter any challenges or breakthrough moments worth sharing?"
+    },
+    "trigger_keywords": [
+      "building", "learned", "challenge", "inspiration",
+      "experience", "idea", "create", "build", "develop",
+      "learn", "share", "thought", "content", "discovered"
+    ],
+    "auto_categorize": true,
+    "trending_detection": true
+  },
+
+  "content_filters": {
+    "require_approval_for": [
+      "promotional",
+      "announcement",
+      "external_links",
+      "controversial"
+    ],
+    "auto_approve": [
+      "educational",
+      "community",
+      "motivational"
+    ],
+    "always_review": [
+      "external_links",
+      "mentions",
+      "product_launches"
+    ],
+    "blocked_keywords": [
+      "spam",
+      "inappropriate_term_1",
+      "inappropriate_term_2"
+    ]
+  },
+
+  "feedback_settings": {
+    "feedback_delay_hours": 2,
+    "request_feedback_for": [
+      "all_posts",
+      "low_engagement",
+      "experimental_content"
+    ],
+    "feedback_prompts": {
+      "rating": "How would you rate this tweet? (1-5 ⭐)",
+      "improvement": "Any suggestions for improvement?",
+      "performance": "Did this resonate with your audience?"
+    }
+  },
+
+  "analytics_reporting": {
+    "daily_summary": {
+      "enabled": true,
+      "time": "18:00"
+    },
+    "weekly_report": {
+      "enabled": true,
+      "day": "sunday",
+      "time": "19:00"
+    },
+    "performance_alerts": {
+      "high_engagement_threshold": 100,
+      "low_engagement_threshold": 10,
+      "notify_on_viral": true
+    }
+  },
+
+  "workflow_customization": {
+    "enable_editing": true,
+    "enable_scheduling": true,
+    "enable_boost_priority": true,
+    "max_pending_approvals": 5
+  },
+
+  "advanced_features": {
+    "multi_user_approval": {
+      "enabled": false,
+      "min_approvals_needed": 1,
+      "voting_enabled": false
+    },
+    "custom_rules": [
+      {
+        "name": "Launch announcements require approval",
+        "condition": "contains_hashtag",
+        "value": "#launch",
+        "action": "require_approval"
+      },
+      {
+        "name": "Auto-approve educational threads",
+        "condition": "is_thread",
+        "value": "educational",
+        "action": "auto_approve"
+      }
+    ],
+    "integration_hooks": {
+      "pre_post_webhook": null,
+      "post_post_webhook": null,
+      "feedback_webhook": null
+    }
+  },
+
+  "error_handling": {
+    "max_retry_attempts": 3,
+    "retry_delay_seconds": 60,
+    "notify_on_failure": true,
+    "fallback_to_manual": true
+  },
+
+  "storage_settings": {
+    "data_directory": "telegram/data",
+    "retention_days": 90,
+    "backup_enabled": true,
+    "backup_frequency": "daily"
+  }
+}

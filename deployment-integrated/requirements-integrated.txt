@@ -1,0 +1,33 @@
+# Captain JAX Integrated Content System - Python Dependencies
+
+# Twitter Integration
+tweepy>=4.14.0
+
+# Telegram Bot
+python-telegram-bot>=20.0
+python-telegram-bot[webhooks]>=20.0
+
+# Environment & Configuration
+python-dotenv>=1.0.0
+
+# Scheduling & Automation
+schedule>=1.2.0
+
+# HTTP Requests
+requests>=2.31.0
+aiohttp>=3.9.0
+
+# Image Processing
+Pillow>=10.4.0
+
+# Web Server & Monitoring
+flask>=3.0.0
+
+# Async Support
+asyncio
+
+# Data Processing
+pandas>=2.0.0
+
+# Logging & Analytics
+structlog>=23.1.0
