@@ -5,7 +5,10 @@
       "Bash(pyenv:*)",
       "Bash(curl -s \"https://api.telegram.org/bot7972653788:AAHY-5gsL5iuxHRPp7iUlB7hvCYqnJL2aWI/sendMessage\" -d \"chat_id=236258123\" -d \"text=✅ BOT IS RUNNING! Try sending /start now!\")",
       "Bash(chmod:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
